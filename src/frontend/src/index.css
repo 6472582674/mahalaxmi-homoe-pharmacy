@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font faces */
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Earthy Palette - OKLCH */
+    /* Terracotta/brick red primary */
+    --primary: 0.55 0.14 35;
+    --primary-foreground: 0.98 0.01 80;
+
+    /* Sage green secondary */
+    --secondary: 0.55 0.09 145;
+    --secondary-foreground: 0.98 0.01 80;
+
+    /* Cream/warm white background */
+    --background: 0.97 0.02 80;
+    --foreground: 0.22 0.04 50;
+
+    /* Warm card */
+    --card: 0.99 0.01 80;
+    --card-foreground: 0.22 0.04 50;
+
+    /* Popover */
+    --popover: 0.99 0.01 80;
+    --popover-foreground: 0.22 0.04 50;
+
+    /* Warm gold accent */
+    --accent: 0.72 0.12 75;
+    --accent-foreground: 0.22 0.04 50;
+
+    /* Muted earth */
+    --muted: 0.93 0.03 75;
+    --muted-foreground: 0.52 0.05 55;
+
+    /* Borders */
+    --border: 0.88 0.04 65;
+    --input: 0.88 0.04 65;
+    --ring: 0.55 0.14 35;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Charts */
+    --chart-1: 0.55 0.14 35;
+    --chart-2: 0.55 0.09 145;
+    --chart-3: 0.72 0.12 75;
+    --chart-4: 0.6 0.1 200;
+    --chart-5: 0.65 0.15 55;
+
+    /* Sidebar */
+    --sidebar: 0.94 0.03 70;
+    --sidebar-foreground: 0.22 0.04 50;
+    --sidebar-primary: 0.55 0.14 35;
+    --sidebar-primary-foreground: 0.98 0.01 80;
+    --sidebar-accent: 0.9 0.04 70;
+    --sidebar-accent-foreground: 0.22 0.04 50;
+    --sidebar-border: 0.88 0.04 65;
+    --sidebar-ring: 0.55 0.14 35;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Figtree", system-ui, sans-serif;
+  }
+}
